@@ -7,4 +7,8 @@ bot.start((ctx) => {
   ctx.reply('You have entered the start command')
 })
 
+bot.command(['myCommand', 'test', 'Test'], (ctx) => {
+  ctx.reply('This is my command')
+})
+
 bot.launch()
