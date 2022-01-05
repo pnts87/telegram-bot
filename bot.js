@@ -11,4 +11,8 @@ bot.command(['myCommand', 'test', 'Test'], (ctx) => {
   ctx.reply('This is my command')
 })
 
+bot.hears('cat', (ctx) => {
+  ctx.reply('meow')
+})
+
 bot.launch()
