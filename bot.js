@@ -15,4 +15,12 @@ bot.hears('cat', (ctx) => {
   ctx.reply('meow')
 })
 
+bot.on('text', (ctx) => {
+  ctx.reply('This is a text message')
+})
+
+bot.on('sticker', (ctx) => {
+  ctx.reply('Nice sticker bro')
+})
+
 bot.launch()
