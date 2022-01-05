@@ -7,8 +7,9 @@ bot.start((ctx) => {
   ctx.reply('You have entered the start command')
 })
 
-bot.command(['myCommand', 'test', 'Test'], (ctx) => {
+bot.command(['myCommand', 'test', 'Test'], (ctx, next) => {
   ctx.reply('This is my command')
+  next(ctx)
 })
 
 bot.hears('cat', (ctx) => {
